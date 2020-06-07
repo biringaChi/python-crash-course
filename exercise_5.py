@@ -120,7 +120,7 @@ def life_stages():
 Q7
   Favorite Fruit: Make a list of your favorite fruits, and then write a series of independent if statements
   that check for certain fruits in your list. Make a list of your three favorite fruits and call it favorite_fruits .
- • Write five if statements . Each should check whether a certain kind of fruit is in your list .
+   Write five if statements . Each should check whether a certain kind of fruit is in your list .
  If the fruit is in your list, the if block should print a statement, such as You really like bananas!
 """
 
@@ -151,3 +151,78 @@ def favorite_fruits():
         print("You really like mangos!")
 
 #favorite_fruits()
+
+
+#Q1: Hello Admin
+usernames = ["adam", "eve", "abraham", "isaac", "jacob", "sampson", "elijah", "admin"]
+def website_login(names):
+    for username in usernames:
+        if "admin" in username:
+            print("Hello Admin, would you like to see a status report?")
+        else:
+            print(f"Hello {username.title()}, thank you for logging in again")
+
+#website_login(usernames)
+
+# Q2: No Users
+del usernames[:]
+def no_users(names):
+    if usernames:
+        print("We have users")
+    else:
+        print("We need to find some users")
+
+#no_users(usernames)
+
+# Q3: Checking usernames
+current_users = ["cbiringa", "bug", "sourcebox", "virus", "malignant", "attack"]
+new_users = ["trapezoid", "circle", "Cbiringa", "Triangle", "sourcebox", "rectangle"]
+def check_usernames(arg1, arg2):
+    for new_user in new_users:
+        new_user = new_user.lower()
+        if new_user in current_users:
+            print(f"{new_user} is already in use. Please pick another username")
+        else:
+            print(f"{new_user} is available")
+
+#check_usernames(current_users, new_users)
+
+"""
+ Q4: Ordinal Numbers
+ Ordinal Numbers: Ordinal numbers indicate their position in a list, such as 1st or 2nd . Most ordinal numbers end in th, except 1, 2, and 3 .
+ Store the numbers 1 through 9 in a list .
+ Loop through the list .
+ Use an if-elif-else chain inside the loop to print the proper ordinal end- ing for each number . Your output should read "1st 2nd 3rd
+ 4th 5th 6th 7th 8th 9th", and each result should be on a separate line .
+"""
+
+numbers = [number for number in range(1, 10)]
+def ordinal_numbers(arg):
+    for number in numbers:
+        if number == 1:
+            print(f"This is the {number}st number")
+        elif number == 2:
+            print(f"This is the {number}nd number")
+        elif number == 3:
+            print(f"This is the {number}rd number")
+        elif number == 3:
+            print(f"This is the {number}rd number")
+        elif number == 4:
+            print(f"This is the {number}th number")
+        elif number == 5:
+            print(f"This is the {number}th number")
+        elif number == 6:
+            print(f"This is the {number}th number")
+        elif number == 7:
+            print(f"This is the {number}th number")
+        elif number == 8:
+            print(f"This is the {number}th number")
+        elif number == 9:
+            print(f"This is the {number}th number")
+        elif number == 10:
+            print(f"This is the {number}th number")
+        else:
+            print(f"{number} is not available")
+
+#ordinal_numbers(numbers)
+
