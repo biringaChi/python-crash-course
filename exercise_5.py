@@ -94,3 +94,60 @@ def alien5_v3():
         print(f"You just earned {alien_color5.upper()} {str(points)} points.")
 
 #alien5_v3()
+
+
+# Q6
+def life_stages():
+    age = 30
+    if age < 2:
+        print("You are a baby")
+    elif age < 4:
+        print("You are a toodler")
+    elif age < 13:
+        print("You are a kid")
+    elif age < 20:
+        print("You are a teenager")
+    elif age < 65:
+        print("You are an adult")
+    elif age >= 65:
+        print("You are an elder")
+    else:
+        print("You are an alien")
+
+#life_stages()
+
+"""
+Q7
+  Favorite Fruit: Make a list of your favorite fruits, and then write a series of independent if statements
+  that check for certain fruits in your list. Make a list of your three favorite fruits and call it favorite_fruits .
+ • Write five if statements . Each should check whether a certain kind of fruit is in your list .
+ If the fruit is in your list, the if block should print a statement, such as You really like bananas!
+"""
+
+def tasty_fruits():
+    fruits = ["guava", "orange", "apple", "mango", "tangerin", "banana"]
+    if "guava" in fruits:
+        print("Guava is available")
+    if "orange" in fruits:
+        print("Orange is available")
+    if "apple" in fruits:
+        print("Apple is available")
+    if "mango" in fruits:
+        print("Mango is available")
+    if "tangerin" in fruits:
+        print("Tangerin is available")
+    if "banana" in fruits:
+        print("Banana is available")
+
+#tasty_fruits()
+
+def favorite_fruits():
+    fruits = ["guava", "banana", "mango"]
+    if "guava" in fruits:
+        print("You really like guavas!")
+    if "banana" in fruits:
+        print("You really like bananas!")
+    if "mango" in fruits:
+        print("You really like mangos!")
+
+#favorite_fruits()
